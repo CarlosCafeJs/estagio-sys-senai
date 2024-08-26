@@ -1,6 +1,8 @@
 package com.example.estagiosenai.estagiosys.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -9,60 +11,61 @@ import jakarta.persistence.Table;
 public class InicioVaga {
 
   @Id
-  private Long id;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long idIniciovg;
+  
+  private String regionalIniciovg;
+  private String diretoriaIniciovg;
+  private String superintendenciaIniciovg;
+  private String descricaoIniciovg;
 
-  private String regionalVaga;
-  private String diretoriaVaga;
-  private String superintendenciaVaga;
-  private String descricaoVaga;
-
-  // Getter para id
-  public Long getId() {
-    return id;
+  // Getter para idIniciovg
+  public Long getIdIniciovg() {
+    return idIniciovg;
   }
 
-  // Setter para id
-  public void setId(Long id) {
-    this.id = id;
+  // Setter para idIniciovg
+  public void setIdIniciovg(Long idIniciovg) {
+    this.idIniciovg = idIniciovg;
   }
 
-  // Getter para regionalVaga
-  public String getRegionalVaga() {
-    return regionalVaga;
+  // Getter para regionalIniciovg
+  public String getRegionalIniciovg() {
+    return regionalIniciovg;
   }
 
-  // Setter para regionalVaga
-  public void setRegionalVaga(String regionalVaga) {
-    this.regionalVaga = regionalVaga;
+  // Setter para regionalIniciovg
+  public void setRegionalIniciovg(String regionalIniciovg) {
+    this.regionalIniciovg = regionalIniciovg;
   }
 
-  // Getter para diretoriaVaga
-  public String getDiretoriaVaga() {
-    return diretoriaVaga;
+  // Getter para diretoriaIniciovg
+  public String getDiretoriaIniciovg() {
+    return diretoriaIniciovg;
   }
 
-  // Setter para diretoriaVaga
-  public void setDiretoriaVaga(String diretoriaVaga) {
-    this.diretoriaVaga = diretoriaVaga;
+  // Setter para diretoriaIniciovg
+  public void setDiretoriaIniciovg(String diretoriaIniciovg) {
+    this.diretoriaIniciovg = diretoriaIniciovg;
   }
 
-  // Getter para superintendenciaVaga
-  public String getSuperintendenciaVaga() {
-    return superintendenciaVaga;
+  // Getter para superintendenciaIniciovg
+  public String getSuperintendenciaIniciovg() {
+    return superintendenciaIniciovg;
   }
 
-  // Setter para superintendenciaVaga
-  public void setSuperintendenciaVaga(String superintendenciaVaga) {
-    this.superintendenciaVaga = superintendenciaVaga;
+  // Setter para superintendenciaIniciovg
+  public void setSuperintendenciaIniciovg(String superintendenciaIniciovg) {
+    this.superintendenciaIniciovg = superintendenciaIniciovg;
   }
 
-  // Getter para descricaoVaga
-  public String getDescricaoVaga() {
-    return descricaoVaga;
+  // Getter para descricaoIniciovg
+  public String getDescricaoIniciovg() {
+    return descricaoIniciovg;
   }
 
-  // Setter para descricaoVaga
-  public void setDescricaoVaga(String descricaoVaga) {
-    this.descricaoVaga = descricaoVaga;
+  // Setter para descricaoIniciovg
+  public void setDescricaoIniciovg(String descricaoIniciovg) {
+    this.descricaoIniciovg = descricaoIniciovg;
   }
 }

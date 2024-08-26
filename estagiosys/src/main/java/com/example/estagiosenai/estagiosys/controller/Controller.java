@@ -14,29 +14,24 @@ public class Controller {
 
   @GetMapping("/")
   public String mensagem() {
-    return "teste";
+    return "doc";
   }
 
   // Endpoint para o supervisor
   @PostMapping("/api/supervisor")
   public SupervisorVaga criarSupervisorVaga(@RequestBody SupervisorVaga supervisorVaga) {
-    // Aqui você pode adicionar lógica para salvar o supervisorVaga no banco de
-    // dados
     return supervisorVaga;
   }
 
   // Endpoint para a vaga de estágio
   @PostMapping("/api/estagiario")
   public EstagiarioVaga criarEstagiarioVaga(@RequestBody EstagiarioVaga estagiarioVaga) {
-    // Aqui você pode adicionar lógica para salvar o estagiarioVaga no banco de
-    // dados
     return estagiarioVaga;
   }
 
   // Endpoint para o início da vaga
   @PostMapping("/api/inicio")
   public InicioVaga criarInicioVaga(@RequestBody InicioVaga inicioVaga) {
-    // Aqui você pode adicionar lógica para salvar o inicioVaga no banco de dados
     return inicioVaga;
   }
 }

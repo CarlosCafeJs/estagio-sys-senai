@@ -1,7 +1,10 @@
 package com.example.estagiosenai.estagiosys.models;
 
 import java.time.LocalTime;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,75 +13,78 @@ import jakarta.persistence.Table;
 public class EstagiarioVaga {
 
     @Id
-    private Long id;
-
-    private int quantidadeEstagiarios;
-    private LocalTime horaEstagio;
-    private String cursoEstagio;
-    private String modalidadeEstagio;
-    private int semestre;
-    private String atividadesEstagio;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idEstagiariovg;
+    
+    private int qtdEstagiariosvg;
+    private LocalTime horaEstagiovg;
+    private String cursoEstagiovg;
+    private String modalidadeEstagiovg;
+    private int semestrevg;
+    private String atividadesEstagiovg;
 
     // Getter e Setter para id
-    public Long getId() {
-        return id;
+    public Long getIdEstagiariovg() {
+        return idEstagiariovg;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdEstagiariovg(Long idEstagiariovg) {
+        this.idEstagiariovg = idEstagiariovg;
     }
 
     // Getter e Setter para quantidadeEstagiarios
-    public int getQuantidadeEstagiarios() {
-        return quantidadeEstagiarios;
+    public int getQtdEstagiariosvg() {
+        return qtdEstagiariosvg;
     }
 
-    public void setQuantidadeEstagiarios(int quantidadeEstagiarios) {
-        this.quantidadeEstagiarios = quantidadeEstagiarios;
+    public void setQtdEstagiariosvg(int qtdEstagiariosvg) {
+        this.qtdEstagiariosvg = qtdEstagiariosvg;
     }
 
     // Getter e Setter para horaEstagio
-    public LocalTime getHoraEstagio() {
-        return horaEstagio;
+    public LocalTime getHoraEstagiovg() {
+        return horaEstagiovg;
     }
 
-    public void setHoraEstagio(LocalTime horaEstagio) {
-        this.horaEstagio = horaEstagio;
+    public void setHoraEstagiovg(LocalTime horaEstagiovg) {
+        this.horaEstagiovg = horaEstagiovg;
     }
 
     // Getter e Setter para cursoEstagio
-    public String getCursoEstagio() {
-        return cursoEstagio;
+    public String getCursoEstagiovg() {
+        return cursoEstagiovg;
     }
 
-    public void setCursoEstagio(String cursoEstagio) {
-        this.cursoEstagio = cursoEstagio;
+    public void setCursoEstagiovg(String cursoEstagiovg) {
+        this.cursoEstagiovg = cursoEstagiovg;
     }
 
     // Getter e Setter para modalidadeEstagio
-    public String getModalidadeEstagio() {
-        return modalidadeEstagio;
+    public String getModalidadeEstagiovg() {
+        return modalidadeEstagiovg;
     }
 
-    public void setModalidadeEstagio(String modalidadeEstagio) {
-        this.modalidadeEstagio = modalidadeEstagio;
+    public void setModalidadeEstagiovg(String modalidadeEstagiovg) {
+        this.modalidadeEstagiovg = modalidadeEstagiovg;
     }
 
     // Getter e Setter para semestre
-    public int getSemestre() {
-        return semestre;
+    public int getSemestrevg() {
+        return semestrevg;
     }
 
-    public void setSemestre(int semestre) {
-        this.semestre = semestre;
+    public void setSemestrevg(int semestrevg) {
+        this.semestrevg = semestrevg;
     }
 
     // Getter e Setter para atividadesEstagio
-    public String getAtividadesEstagio() {
-        return atividadesEstagio;
+    public String getAtividadesEstagiovg() {
+        return atividadesEstagiovg;
     }
 
-    public void setAtividadesEstagio(String atividadesEstagio) {
-        this.atividadesEstagio = atividadesEstagio;
+    public void setAtividadesEstagiovg(String atividadesEstagiovg) {
+        this.atividadesEstagiovg = atividadesEstagiovg;
     }
+
+  
 }

@@ -1,6 +1,8 @@
 package com.example.estagiosenai.estagiosys.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -9,55 +11,56 @@ import jakarta.persistence.Table;
 public class SupervisorVaga {
 
   @Id
-  private String cpfSupervisor;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private String cpfSupervisorvg;
 
-  private String nomeSupervisor;
-  private String formacaoSupervisor;
-  private boolean processoSeletivoResponsavel;
-  private String nomeRecrutador;
+  private String nomeSupervisorvg;
+  private String formacaoSupervisorvg;
+  private boolean processoSeletivoResponsavelvg;
+  private String nomeRecrutadorvg;
 
-  // Getter e Setter para cpfSupervisor
-  public String getCpfSupervisor() {
-    return cpfSupervisor;
+  // Getter e Setter para cpfSupervisorvg
+  public String getCpfSupervisorvg() {
+    return cpfSupervisorvg;
   }
 
-  public void setCpfSupervisor(String cpfSupervisor) {
-    this.cpfSupervisor = cpfSupervisor;
+  public void setCpfSupervisorvg(String cpfSupervisorvg) {
+    this.cpfSupervisorvg = cpfSupervisorvg;
   }
 
-  // Getter e Setter para nomeSupervisor
-  public String getNomeSupervisor() {
-    return nomeSupervisor;
+  // Getter e Setter para nomeSupervisorvg
+  public String getNomeSupervisorvg() {
+    return nomeSupervisorvg;
   }
 
-  public void setNomeSupervisor(String nomeSupervisor) {
-    this.nomeSupervisor = nomeSupervisor;
+  public void setNomeSupervisorvg(String nomeSupervisorvg) {
+    this.nomeSupervisorvg = nomeSupervisorvg;
   }
 
-  // Getter e Setter para formacaoSupervisor
-  public String getFormacaoSupervisor() {
-    return formacaoSupervisor;
+  // Getter e Setter para formacaoSupervisorvg
+  public String getFormacaoSupervisorvg() {
+    return formacaoSupervisorvg;
   }
 
-  public void setFormacaoSupervisor(String formacaoSupervisor) {
-    this.formacaoSupervisor = formacaoSupervisor;
+  public void setFormacaoSupervisorvg(String formacaoSupervisorvg) {
+    this.formacaoSupervisorvg = formacaoSupervisorvg;
   }
 
-  // Getter e Setter para processoSeletivoResponsavel
-  public boolean isProcessoSeletivoResponsavel() {
-    return processoSeletivoResponsavel;
+  // Getter e Setter para processoSeletivoResponsavelvg
+  public boolean isProcessoSeletivoResponsavelvg() {
+    return processoSeletivoResponsavelvg;
   }
 
-  public void setProcessoSeletivoResponsavel(boolean processoSeletivoResponsavel) {
-    this.processoSeletivoResponsavel = processoSeletivoResponsavel;
+  public void setProcessoSeletivoResponsavelvg(boolean processoSeletivoResponsavelvg) {
+    this.processoSeletivoResponsavelvg = processoSeletivoResponsavelvg;
   }
 
-  // Getter e Setter para nomeRecrutador
-  public String getNomeRecrutador() {
-    return nomeRecrutador;
+  // Getter e Setter para nomeRecrutadorvg
+  public String getNomeRecrutadorvg() {
+    return nomeRecrutadorvg;
   }
 
-  public void setNomeRecrutador(String nomeRecrutador) {
-    this.nomeRecrutador = nomeRecrutador;
+  public void setNomeRecrutadorvg(String nomeRecrutadorvg) {
+    this.nomeRecrutadorvg = nomeRecrutadorvg;
   }
 }
