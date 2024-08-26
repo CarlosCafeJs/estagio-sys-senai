@@ -1,4 +1,4 @@
-package com.example.estagioserpro.estagiosys;
+package com.example.estagiosenai.estagiosys;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
