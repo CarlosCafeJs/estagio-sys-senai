@@ -12,6 +12,8 @@ public class SupervisorVaga {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long idSupervidorvg;
+
   private String cpfSupervisorvg;
 
   private String nomeSupervisorvg;
@@ -62,5 +64,13 @@ public class SupervisorVaga {
 
   public void setNomeRecrutadorvg(String nomeRecrutadorvg) {
     this.nomeRecrutadorvg = nomeRecrutadorvg;
+  }
+
+  public Long getIdSupervidorvg() {
+    return idSupervidorvg;
+  }
+
+  public void setIdSupervidorvg(Long idSupervidorvg) {
+    this.idSupervidorvg = idSupervidorvg;
   }
 }
