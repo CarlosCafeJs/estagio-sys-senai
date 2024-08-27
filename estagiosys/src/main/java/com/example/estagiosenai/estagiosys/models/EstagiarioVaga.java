@@ -85,6 +85,4 @@ public class EstagiarioVaga {
     public void setAtividadesEstagiovg(String atividadesEstagiovg) {
         this.atividadesEstagiovg = atividadesEstagiovg;
     }
-
-  
 }

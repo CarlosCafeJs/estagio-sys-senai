@@ -3,18 +3,14 @@ package com.example.estagiosenai.estagiosys.service;
 import java.util.List;
 
 import org.springframework.data.domain.Sort;
-// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.estagiosenai.estagiosys.models.InicioVaga;
-// import com.example.estagiosenai.estagiosys.repository.RepositoryInicio;
 import com.example.estagiosenai.estagiosys.repository.RepositoryInicio;
 
 @Service
 public class InicioService {
 
-  // @Autowired
-  // private InicioVaga propsInicio;
 
   private RepositoryInicio repositoryInicio;
 

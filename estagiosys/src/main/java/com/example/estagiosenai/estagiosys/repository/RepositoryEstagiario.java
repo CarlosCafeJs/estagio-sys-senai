@@ -8,4 +8,8 @@ import com.example.estagiosenai.estagiosys.models.EstagiarioVaga;
 @Repository
 public interface RepositoryEstagiario extends JpaRepository<EstagiarioVaga, Long> {
 
+
+    
+
+
 }

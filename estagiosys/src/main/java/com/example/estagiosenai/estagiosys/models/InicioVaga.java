@@ -13,7 +13,7 @@ public class InicioVaga {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long idIniciovg;
-  
+
   private String regionalIniciovg;
   private String diretoriaIniciovg;
   private String superintendenciaIniciovg;
