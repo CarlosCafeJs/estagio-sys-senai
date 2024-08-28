@@ -1,2 +1,3 @@
-# SERPRO
-Sistema SERPRO de controle de estagio. 
+# Sistema de Controle de Estagio
+
+Trabalho desenvolvido com fins educativos.
