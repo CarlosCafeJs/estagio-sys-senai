@@ -11,7 +11,6 @@ import com.example.estagiosenai.estagiosys.repository.RepositoryInicio;
 @Service
 public class InicioService {
 
-
   private RepositoryInicio repositoryInicio;
 
   public InicioService(RepositoryInicio repositoryInicio) {
